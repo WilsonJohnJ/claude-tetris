@@ -1,0 +1,6 @@
+{
+  "project": {
+    "name": "Tetris Game",
+    "description": "Vanilla JavaScript Tetris implementation"
+  }
+}
