@@ -5,10 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tetris</title>
   <link rel="stylesheet" href="style.css" />
+  <script>
+    (function () {
+      var theme = localStorage.getItem('theme') || 'dark';
+      document.documentElement.dataset.theme = theme;
+    })();
+  </script>
 </head>
 <body>
   <div class="wrapper">
-    <h1 class="game-title">TETRIS</h1>
+    <div class="top-bar">
+      <h1 class="game-title">TETRIS</h1>
+      <label class="theme-toggle">
+        <input type="checkbox" id="theme-toggle" />
+        Modo claro
+      </label>
+    </div>
     <div class="game-container">
       <canvas id="board" width="300" height="600"></canvas>
 
